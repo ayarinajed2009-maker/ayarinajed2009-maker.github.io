@@ -14,7 +14,7 @@ Open `index.html` in a web browser. You can also use a local development server,
 
 - Edit the page content and links in `index.html`.
 - Update the colors, layout, and responsive styles in `style.css`.
-- Add a `Project.html` file to provide the projects page linked from the navigation.
+- Update `Projects.html` to add or edit the projects linked from the navigation.
 
 ## Publish with GitHub Pages
 

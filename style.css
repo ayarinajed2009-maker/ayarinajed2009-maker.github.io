@@ -276,6 +276,135 @@
             border-top: 1px solid var(--line);
         }
 
+        .page-main {
+            min-height: calc(100vh - 178px);
+        }
+
+        .page-intro {
+            max-width: 700px;
+            padding-block: 92px 58px;
+        }
+
+        .page-intro h1 {
+            font-size: clamp(3.2rem, 7vw, 5.4rem);
+        }
+
+        .page-intro .hero-copy {
+            max-width: 560px;
+        }
+
+        nav a[aria-current="page"] {
+            color: var(--accent);
+        }
+
+        .project-list {
+            padding-bottom: 48px;
+        }
+
+        .project-card {
+            position: relative;
+            min-height: 340px;
+            overflow: hidden;
+            padding: 26px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background:
+                linear-gradient(120deg, rgba(201, 243, 106, 0.07), transparent 60%),
+                var(--surface);
+        }
+
+        .project-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .project-number,
+        .project-status {
+            font-size: 0.72rem;
+            font-weight: 650;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .project-number {
+            color: var(--muted);
+        }
+
+        .project-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .project-status span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 12px rgba(201, 243, 106, 0.65);
+        }
+
+        .project-card-content {
+            position: relative;
+            z-index: 1;
+            max-width: 570px;
+            padding-block: 42px 10px;
+        }
+
+        .project-card-content .section-label {
+            margin-bottom: 12px;
+        }
+
+        .project-card-content h2 {
+            font-size: clamp(1.7rem, 4vw, 2.3rem);
+        }
+
+        .project-description {
+            max-width: 470px;
+            margin: 14px 0 0;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .project-card-content .skills {
+            margin-top: 18px;
+        }
+
+        .project-link {
+            margin-top: 26px;
+        }
+
+        .project-decoration {
+            position: absolute;
+            right: 36px;
+            bottom: 20px;
+            color: rgba(201, 243, 106, 0.08);
+            font-size: clamp(7rem, 20vw, 13rem);
+            font-weight: 750;
+            letter-spacing: -0.12em;
+            line-height: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .project-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding-block: 28px 66px;
+            border-top: 1px solid var(--line);
+        }
+
+        .project-cta .about-text {
+            margin: 0;
+        }
+
         .section-label {
             margin: 0 0 15px;
             color: var(--accent);
@@ -356,6 +485,10 @@
                 padding-block: 76px 55px;
             }
 
+            .page-intro {
+                padding-block: 76px 42px;
+            }
+
             h1 {
                 font-size: clamp(3.3rem, 14vw, 5.3rem);
             }
@@ -368,6 +501,27 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
                 padding-block: 34px 52px;
+            }
+
+            .project-card {
+                min-height: 360px;
+                padding: 20px;
+            }
+
+            .project-card-content {
+                padding-top: 38px;
+            }
+
+            .project-decoration {
+                right: 18px;
+                bottom: 16px;
+                font-size: 7rem;
+            }
+
+            .project-cta {
+                align-items: flex-start;
+                flex-direction: column;
+                padding-bottom: 48px;
             }
         }
 
