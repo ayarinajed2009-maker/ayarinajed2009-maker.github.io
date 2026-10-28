@@ -1,12 +1,70 @@
-<!--This is Just Test-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="theme-color" content="#10130f">
+    <meta name="description" content="Meet Najed Ayari, a student and aspiring developer from Tunisia.">
+    <title>Najed Ayari — Student &amp; Aspiring Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Najed Ayari home">
+            <span class="wordmark-mark" aria-hidden="true">NA</span>
+            <span>Najed Ayari</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="Project.html">Projects</a>
+            <a href="https://github.com/ayarinajed2009-maker" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="intro-title">
+            <div>
+                <p class="eyebrow">Student · Tunisia</p>
+                <h1 id="intro-title">Hello, I’m<br><span>Najed.</span></h1>
+                <p class="hero-copy">I’m a student who loves learning new things and bringing ideas to life with code. Welcome to my little corner of the internet.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="Project.html">Explore my projects <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://github.com/ayarinajed2009-maker" target="_blank" rel="noopener noreferrer">Visit my GitHub</a>
+                </div>
+            </div>
+            <div class="visual" aria-label="A graphic featuring the initials NA">
+                <div class="visual-grid" aria-hidden="true"></div>
+                <div class="initials" aria-hidden="true">NA</div>
+                <div class="floating-note">
+                    <strong>Curious by nature</strong>
+                    <span>Always learning something new</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="details" id="about" aria-labelledby="about-title">
+            <div>
+                <p class="section-label">A little about me</p>
+                <h2 id="about-title">Learning, building, growing.</h2>
+            </div>
+            <div>
+                <p class="about-text">I’m a <strong>student from Tunisia</strong> with a passion for technology. I speak <strong>Arabic, English, French</strong>, and a little German. I’m exploring programming and enjoy making things for the web.</p>
+                <div class="skills" aria-label="Languages and technologies">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Arabic</span>
+                    <span class="skill">English</span>
+                    <span class="skill">French</span>
+                    <span class="skill">German</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>Made with curiosity in Tunisia.</span>
+        <span>© 2026 Najed Ayari</span>
+    </footer>
 </body>
 </html>
